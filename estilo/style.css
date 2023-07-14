@@ -3,18 +3,18 @@
     padding: 0;
     font-size: 1em;
 }
-body, html{
-    min-height: 100vh;
-    background-color: var(--color1);
-    font-family: var(--font1);
-    line-height: 1.8em;
-}
 :root{
     --font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --color1: #333;
     --color2: #44444479;
     --color3: #000;
     --color4: #fff;
+}
+body, html{
+    min-height: 100vh;
+    background-color: var(--color1);
+    font-family: var(--font1);
+    line-height: 1.8em;
 }
 .parallax{
     /* Parallax Effect with shorthand*/
