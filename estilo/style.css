@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+body, html{
+    min-height: 100vh;
+    background-color: var(--color1);
+    font-family: var(--font1);
+    line-height: 1.8em;
+}
+:root{
+    --font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color1: #333;
+    --color2: #44444479;
+    --color3: #000;
+    --color4: #fff;
+}
+.parallax{
+    /* Parallax Effect with shorthand*/
+    background: center no-repeat fixed;
+    background-size: cover;
+    /* Tip: Try to remove the "fixed" parameter (background-attachment:fixed; out of the shorthand) to see how this page works when effect is enable or disable.*/
+    
+    /* Span Position */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.img1{
+    background-image: url('../imagens/ice1.jpg');
+    min-height: 100vh;
+}
+.img2{
+    background-image: url('../imagens/ice2.jpg');
+    min-height: 400px;
+}
+.img3{
+    background-image: url('../imagens/ice3.jpg');
+    min-height: 400px;
+}
+.parallax>span{
+    background-color: var(--color2);
+    color: var(--color4);    
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+h3{
+    color: var(--cor3);
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+.text{
+    background-color: var(--color4);
+    color: var(--cor1);
+    text-align: justify;
+    padding: 50px 80px;
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor3);
+}
+a:hover{
+    text-decoration: underline;
+}
+.text2{
+    background-color: var(--color3);
+    color: var(--color4);
+}
+/* Some mobile devices have a problem with background-attachment: fixed. However, you can use media queries to turn off the parallax effect for mobile devices: */
+
+/* If you need, turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+/* @media only screen and (max-device-width: 667px) {
+.parallax {
+    background-attachment: scroll;
+    }
+} */
